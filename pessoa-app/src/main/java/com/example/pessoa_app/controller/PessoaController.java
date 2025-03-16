@@ -14,8 +14,18 @@ public class PessoaController {
     @Autowired
     private Pessoa pessoa;
 
+    // @GetMapping
+    // public Pessoa getPessoa() {
+    //     return pessoa;
+    // }
     @GetMapping
     public Pessoa getPessoa() {
+        System.out.println("Dados da Pessoa:");
+        System.out.println("Nome: " + pessoa.getNome());
+        System.out.println("Idade: " + pessoa.getIdade());
+        System.out.println("Sexo: " + pessoa.getSexo());
+        System.out.println("Estado Civil: " + pessoa.getEstadoCivil());
+        System.out.println("Profissão: " + pessoa.getProfissao());
         return pessoa;
     }
 }
